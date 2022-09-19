@@ -10,6 +10,7 @@ services:
       - JUPYTER_ENABLE_LAB=yes
     volumes:
       - ./works:/home/jovyan/work
+      - ./rlang:/home/jovyan/rlang
       - ./data:/home/jovyan/data
       - ./README.md:/home/jovyan/README.md
     command: start-notebook.sh --NotebookApp.token="" 
